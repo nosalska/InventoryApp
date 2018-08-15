@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:padding="@dimen/fab_margin"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#2B3D4D"
+        tools:text="Pan Tadeusz"/>
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#AEB6BD"
+        tools:text="10 $"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/product_quantity"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#2B3D4D"
+        tools:text = "20"/>
+
+    <Button
+        android:id="@+id/sale_button"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/sale_button"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+</LinearLayout>
