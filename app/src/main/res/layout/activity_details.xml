@@ -29,17 +29,17 @@
 
             <!-- Name field -->
             <TextView
-                android:id="@+id/edit_product_name"
+                android:id="@+id/view_product_name"
                 style="@style/EditorFieldStyle"
                 android:hint="@string/hint_product_name"/>
 
             <TextView
-                android:id="@+id/edit_product_price"
+                android:id="@+id/view_product_price"
                 style="@style/EditorFieldStyle"
                 android:hint="@string/hint_product_price" />
 
             <TextView
-                android:id="@+id/edit_product_quantity"
+                android:id="@+id/view_product_quantity"
                 style="@style/EditorFieldStyle"
                 android:hint="@string/hint_product_quantity" />
         </LinearLayout>
@@ -69,13 +69,13 @@
 
             <!-- Supplier name field -->
             <TextView
-                android:id="@+id/edit_supplier_name"
+                android:id="@+id/view_supplier_name"
                 style="@style/EditorFieldStyle"
                 android:hint="@string/hint_supplier_name" />
 
             <!-- Supplier telephone no. -->
             <TextView
-                android:id="@+id/edit_supplier_telephone_no"
+                android:id="@+id/view_supplier_telephone_no"
                 style="@style/EditorFieldStyle"
                 android:hint="@string/hint_supplier_telephone_no"/>
         </LinearLayout>
@@ -87,12 +87,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:id="@+id/decrease_quantity"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="@string/decrease_quantity"/>
 
         <Button
+            android:id="@+id/increase_quantity"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -101,6 +103,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/call_supplier"
         android:padding="@dimen/activity_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

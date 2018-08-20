@@ -14,7 +14,7 @@ public class ProductDbHelper extends SQLiteOpenHelper {
             InventoryContract.ProductEntry.COLUMN_PRODUCT_PRICE + " INTEGER NOT NULL, " +
             InventoryContract.ProductEntry.COLUMN_PRODUCT_QUANTITY + " INTEGER DEFAULT 0, " +
             InventoryContract.ProductEntry.COLUMN_SUPPLIER_NAME + " TEXT NOT NULL, " +
-            InventoryContract.ProductEntry.COLUMN_SUPPLIER_TELEPHONE_NO + " TEXT);";
+            InventoryContract.ProductEntry.COLUMN_SUPPLIER_TELEPHONE_NO + " TEXT NOT NULL);";
 
     private static final String SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS " + InventoryContract.ProductEntry.TABLE_NAME + ";";
 
@@ -31,5 +31,10 @@ public class ProductDbHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion) {
         sqLiteDatabase.execSQL(SQL_DELETE_ENTRIES);
         onCreate(sqLiteDatabase);
+    }
+
+    @Override
+    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        super.onDowngrade(db, oldVersion, newVersion);
     }
 }

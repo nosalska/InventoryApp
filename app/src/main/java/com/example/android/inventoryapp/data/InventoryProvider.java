@@ -172,8 +172,8 @@ public class InventoryProvider extends ContentProvider {
         }
 
         Integer quantity = values.getAsInteger(InventoryContract.ProductEntry.COLUMN_PRODUCT_QUANTITY);
-        if (quantity == null || quantity < 0 ){
-            throw new IllegalArgumentException("Quantity has to be inserted and must be a non-negative value.");
+        if (quantity < 0 ){
+            throw new IllegalArgumentException("Quantity has to be a non-negative value.");
         }
 
         String supplierName = values.getAsString(InventoryContract.ProductEntry.COLUMN_SUPPLIER_NAME);

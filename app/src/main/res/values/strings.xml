@@ -9,5 +9,36 @@
     <string name="hint_supplier_name">Supplier Name</string>
     <string name="hint_supplier_telephone_no">Supplier Telephone Number</string>
     <string name="action_save">Save</string>
+    <string name="sale_button">Sale</string>
+    <string name="editor_activity_title_new_product">Add a Product</string>
+    <string name="editor_activity_title_edit_product">Edit Product</string>
+    <string name="decrease_quantity">Decrease quantity</string>
+    <string name="increase_quantity">Increase quantity</string>
+    <string name="call_supplier">Call Supplier</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="details_activity_title">Product Details</string>
+    <string name="delete_dialog_msg">Delete this product?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_product_failed">Product deletion failed.</string>
+    <string name="delete_product_successful">Product deleted.</string>
+    <string name="empty_view_title_text">Inventory is empty</string>
+    <string name="empty_view_subtitle_text">Add products</string>
+    <string name="product_saved">Product saved.</string>
+    <string name="product_not_saved">Error with saving product.</string>
+    <string name="successfully_saved_quantity">ok</string>
+    <string name="error_with_saving_quantity">error</string>
+    <string name="product_gone">Product  is out of stock. Please call the supplier.</string>
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+
+    <string name="no_product_name">Product has to be named.</string>
+    <string name="no_price">Price has to be populated.</string>
+    <string name="price_is_zero">Price has to be a positive number.</string>
+    <string name="incorrect_quantity">Quantity has to be a non-negative value.</string>
+    <string name="no_supplier">Supplier name has to be inserted.</string>
+    <string name="no_supplier_tel_no">Supplier telephone number has to be inserted.</string>
 
 </resources>
