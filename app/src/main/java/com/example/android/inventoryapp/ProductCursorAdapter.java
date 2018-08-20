@@ -56,8 +56,8 @@ public class ProductCursorAdapter extends CursorAdapter {
 
         // Populate fields with extracted properties
         tvName.setText(name);
-        tvPrice.setText(Integer.toString(price));
-        tvQuantity.setText(Integer.toString(quantity));
+        tvPrice.setText("$" + Integer.toString(price));
+        tvQuantity.setText(Integer.toString(quantity) + " pcs");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

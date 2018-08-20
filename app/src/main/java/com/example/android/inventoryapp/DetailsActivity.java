@@ -173,8 +173,8 @@ public class DetailsActivity extends AppCompatActivity implements LoaderManager.
             // Update the views on the screen with the values from the database
 
             mProductNameTextView.setText(name);
-            mProductPriceTextView.setText(Integer.toString(price));
-            mProductQuantityTextView.setText(Integer.toString(quantity));
+            mProductPriceTextView.setText("$" + Integer.toString(price));
+            mProductQuantityTextView.setText(Integer.toString(quantity) + " pcs");
             mSupplierNameTextView.setText(supplierName);
             mSupplierTelephoneNoTextView.setText(supplierTel);
 
