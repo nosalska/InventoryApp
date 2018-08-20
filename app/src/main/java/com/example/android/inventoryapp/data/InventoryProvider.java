@@ -43,7 +43,6 @@ public class InventoryProvider extends ContentProvider {
         sUriMatcher.addURI(InventoryContract.CONTENT_AUTHORITY, InventoryContract.PATH_PRODUCTS + "/#", PRODUCT_ID);
     }
 
-
     @Override
     public boolean onCreate() {
         mDbHelper = new ProductDbHelper(getContext());
@@ -92,7 +91,6 @@ public class InventoryProvider extends ContentProvider {
             default:
                 throw new IllegalArgumentException("Update is not supported for " + uri);
         }
-
     }
 
     @Nullable
@@ -114,12 +112,10 @@ public class InventoryProvider extends ContentProvider {
             default:
                 throw new IllegalArgumentException("Cannot query unknown URi" + uri);
         }
-
         //Set notification URI on the Cursor,
         //so we know what content URI the Cursor was created for.
         //If the data at this URI changes, then we know we need to update the Cursor.
         cursor.setNotificationUri(getContext().getContentResolver(), uri);
-
         return cursor;
     }
 
@@ -254,7 +250,6 @@ public class InventoryProvider extends ContentProvider {
         else {
             getContext().getContentResolver().notifyChange(uri, null);
         }
-
         return numberOfUpdatedRows;
     }
 }

@@ -1,7 +1,6 @@
 package com.example.android.inventoryapp;
 
 import android.content.ContentUris;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -15,9 +14,7 @@ import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.android.inventoryapp.data.InventoryContract;
 

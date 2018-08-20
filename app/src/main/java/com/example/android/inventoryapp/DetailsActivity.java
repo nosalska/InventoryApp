@@ -1,14 +1,11 @@
 package com.example.android.inventoryapp;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.LoaderManager;
@@ -21,14 +18,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.inventoryapp.data.InventoryContract;
-import com.example.android.inventoryapp.data.ProductDbHelper;
-
-import static android.net.Uri.parse;
 
 public class DetailsActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -89,7 +82,6 @@ public class DetailsActivity extends AppCompatActivity implements LoaderManager.
                 startActivity(callSupplierIntent);
             }
         });
-
     }
 
     @Override

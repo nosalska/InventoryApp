@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,7 +15,6 @@ import android.support.v4.content.Loader;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -110,14 +108,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         if (!TextUtils.isEmpty(priceStr)){
             productPrice = Integer.parseInt(priceStr);
         }
-//
-//        while (TextUtils.isEmpty(productName)
-//                || TextUtils.isEmpty(priceStr)
-//                || productPrice == 0
-//                || TextUtils.isEmpty(supplierName)
-//                || TextUtils.isEmpty(supplierTelephoneNo)){
-//
-//        }
 
         if(!TextUtils.isEmpty(productName)
                 && !TextUtils.isEmpty(priceStr)
@@ -133,7 +123,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                     productQuantity = 0;
                 }
             }
-
 
             ContentValues values = new ContentValues();
             values.put(InventoryContract.ProductEntry.COLUMN_PRODUCT_NAME, productName);
@@ -331,5 +320,4 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             showUnsavedChangesDialog(discardButtonClickListener);
         }
     }
-
 }

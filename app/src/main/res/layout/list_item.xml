@@ -54,5 +54,4 @@
         android:clickable="true"
         android:focusable="false"
         android:focusableInTouchMode="false"/>
-
 </LinearLayout>
